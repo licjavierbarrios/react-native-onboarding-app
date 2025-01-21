@@ -1,50 +1,78 @@
-# Welcome to your Expo app 👋
+# Proyecto de Onboarding en React Native con Bun
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Este proyecto es una aplicación de React Native que presenta un flujo de onboarding de múltiples pantallas utilizando Expo y Bun como gestor de paquetes. Las pantallas incluyen animaciones impulsadas por `react-native-reanimated` y componentes personalizados para una experiencia de usuario fluida.
 
-## Get started
+## Características
 
-1. Install dependencies
+- **Flujo de Onboarding Animado:** Transiciones suaves y efectos de animación para las pantallas de bienvenida.
+- **Componentes Personalizados:** Incluye componentes reutilizables como `Button`, `IconButton`, `Paginator` y `BouncyOnboardingItem`.
+- **React Native Reanimated:** Animaciones avanzadas utilizando valores compartidos y estilos animados.
+- **Diseño Responsivo:** Se adapta a diferentes tamaños de pantalla con `Dimensions`.
 
+## Pantallas
+
+La aplicación incluye las siguientes pantallas de bienvenida:
+1. **Travel & Study**
+2. **Listen & Focus**
+3. **Be Active**
+4. **Learn Things**
+
+## Instalación
+
+1. Asegúrate de tener Bun instalado. Si no, puedes instalarlo siguiendo las instrucciones en [sitio oficial de Bun](https://bun.sh/).
+2. Clona el repositorio:
    ```bash
-   npm install
+   git clone <repository-url>
+   cd bouncyonboarding
+   ```
+3. Instala las dependencias:
+   ```bash
+   bun install
    ```
 
-2. Start the app
+## Ejecución de la Aplicación
 
-   ```bash
-    npx expo start
-   ```
+- Inicia el servidor de desarrollo:
+  ```bash
+  bun start
+  ```
+- Ejecuta en un emulador/dispositivo Android:
+  ```bash
+  bun android
+  ```
+- Ejecuta en un simulador/dispositivo iOS:
+  ```bash
+  bun ios
+  ```
+- Ejecuta en la web:
+  ```bash
+  bun web
+  ```
 
-In the output, you'll find options to open the app in a
+## Scripts del Proyecto
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Los scripts personalizados incluidos en el proyecto son los siguientes:
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- **Iniciar el proyecto:** `bun start`
+- **Reiniciar el proyecto:** `bun reset-project`
+- **Ejecutar pruebas:** `bun test`
+- **Linting:** `bun lint`
 
-## Get a fresh project
+## Dependencias
 
-When you're ready, run:
+Este proyecto utiliza las siguientes dependencias:
 
-```bash
-npm run reset-project
-```
+### Dependencias principales:
+- **React Native:** Versión `0.76.6`
+- **Expo:** Versión `~52.0.26`
+- **React Native Reanimated:** Versión `~3.16.1`
+- **React Native Redash:** Versión `^18.1.3`
+- **@react-navigation/native:** Versión `^7.0.14`
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### Dependencias de desarrollo:
+- **Jest:** Versión `^29.2.1`
+- **TypeScript:** Versión `^5.3.3`
 
-## Learn more
+## Licencia
 
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Este proyecto está bajo la Licencia MIT.
