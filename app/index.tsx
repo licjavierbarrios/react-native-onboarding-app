@@ -108,7 +108,7 @@ const Onboarding = () => {
   });
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: "#F7ECE4" }}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: "#F6F6F6" }}>
       <View style={styles.header}>
         <Button
           onPress={handleBackPress}
